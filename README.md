@@ -1,6 +1,4 @@
-# DemoGarmentList
-
-# SwiftUI Garment List App
+# SwiftUI Garment Management App
 
 This SwiftUI application manages a list of garments, allowing users to add new garments, view existing ones, and sort them.
 
@@ -42,3 +40,16 @@ The `AddGarmentView` struct is a SwiftUI view that allows users to add new garme
 
 - Contains a text field for entering the name of the new garment.
 - Provides a "Save" button to add the new garment to the list.
+
+## XCTest
+
+Unit tests are included in the project to ensure the correctness of the application's logic. Tests cover functionality such as adding garments, sorting them, and managing the view model.
+
+## Architecture
+
+The application follows the MVVM (Model-View-ViewModel) architecture pattern:
+
+- **Model**: `Garment` struct represents the data model.
+- **View**: SwiftUI views (`GarmentListView` and `AddGarmentView`) define the UI.
+- **ViewModel**: `GarmentViewModel` class manages the application logic and data flow between the model and views.
+
